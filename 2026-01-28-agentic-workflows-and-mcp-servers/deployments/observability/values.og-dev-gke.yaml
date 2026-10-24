@@ -38,7 +38,7 @@ config:
     pipelines:
       traces:
         receivers: [otlp]
-        processors: [ ]
+        processors: [transform]
         exporters: [otlphttp]
       metrics:
         receivers: [otlp]
